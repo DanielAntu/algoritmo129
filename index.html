@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Algoritmo 129</title>
+</head>
+<body>
+    <section class="container input-container">
+        <h1>Desconto Para o INSS</h1>
+        <div class="input-sal">
+            <label for="sal">Seu salário:</label>
+            <input type="text" name="sal" id="sal" placeholder="Exemplo: 21,90">
+        </div>
+        <div class="botao">
+            <button id="calcular" disabled>Calcular</button>
+            <button id="reset">Resetar</button>
+        </div>
+    </section>
+
+    <section class="container res hide">
+        <h1>Aqui esta o desconto sobre seu salário</h1>
+        <p>Porcentagem de desconto: <span id="pdes">20%</span></p>
+        <p>Desconto: <span id="desc">R$34.90</span></p>
+        <h2>Tabela de valores</h2>
+        <table>
+            <tr>
+                <td>Menor ou igual a R$ 600,00</td>
+                <td>Isento</td>
+            </tr>
+
+            <tr>
+                <td>Maior que R$ 600,00 e menor ou igual a R$ 1200,00</td>
+                <td>20%</td>
+            </tr>
+
+            <tr>
+                <td>Maior que R$ 1200,00 e menor ou igual a R$2000,00</td>
+                <td>25%</td>
+            </tr>
+
+            <tr>
+                <td>Maior que R$ 2000,00</td>
+                <td>30%</td>
+            </tr>
+        </table>
+        <div class="cbtn"><button id="closebtn">Voltar</button></div>
+    </section>
+</body>
+</html>

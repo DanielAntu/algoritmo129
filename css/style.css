@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #10186B;
+    --color2: #6B76EE;
+    --color3: #2334EB;
+    --color4: #30356B;
+    --color5: #1C29B8;
+}
+
+.hide {
+    display: none !important;
+}
+
+body {
+    background-color: var(--color5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color3);
+    padding: 10px;
+    max-width: 350px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 1px 2px 3px 2px #6b76ee5d;
+}
+
+h1 {
+    border-bottom: 1px solid var(--color1);
+    text-align: center;
+}
+
+.input-sal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.input-sal input {
+    padding: 7px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: rgb(194, 59, 59);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    border: 2px solid rgb(194, 59, 59);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    color: rgb(194, 59, 59);
+    background-color: white;
+}
+
+.botao {
+    display: flex;
+    gap: 8px;
+}
+
+.botao button {
+    width: 50%;
+}
+
+.res p {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px solid var(--color1);
+    font-weight: bold;
+}
+
+.res h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+table {
+    border: 1px solid var(--color1);
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid var(--color1);
+    border-right: 1px solid var(--color1);
+    padding: 8px;
+    text-align: center;
+}
+
+.cbtn {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.cbtn button {
+    width: 60%;
+}
+
+#reset {
+    background-color: rgb(62, 61, 61);
+    border: 2px solid rgb(62, 61, 61);
+}
+
+#reset:hover {
+    background-color: white;
+    color: rgb(62, 61, 61);
+}
